@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-jsonapi": {
+    "hpen-jsonapi": {
       "root": "",
       "sourceRoot": "demo",
       "projectType": "application",
@@ -47,18 +47,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-jsonapi:build"
+            "browserTarget": "hpen-jsonapi:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-jsonapi:build:production"
+              "browserTarget": "hpen-jsonapi:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-jsonapi:build"
+            "browserTarget": "hpen-jsonapi:build"
           }
         },
         "lint": {
@@ -73,7 +73,7 @@
         }
       }
     },
-    "ngx-jsonapi-e2e": {
+    "hpen-jsonapi-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -82,7 +82,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ngx-jsonapi:serve"
+            "devServerTarget": "hpen-jsonapi:serve"
           }
         },
         "lint": {
@@ -97,7 +97,7 @@
       }
     }
   },
-  "defaultProject": "ngx-jsonapi",
+  "defaultProject": "hpen-jsonapi",
   "schematics": {
     "@schematics/angular:component": {
       "inlineStyle": true,

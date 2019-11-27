@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { AuthorsService } from '../authors.service';
 import { AuthorsComponent } from './authors.component';
-import { NgxJsonapiModule } from 'ngx-jsonapi';
+import { HpenJsonapiModule } from 'hpen-jsonapi';
 
 describe('AuthorsComponent', () => {
     let component: AuthorsComponent;
@@ -11,7 +11,7 @@ describe('AuthorsComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule, NgxJsonapiModule],
+            imports: [RouterTestingModule, HpenJsonapiModule],
             declarations: [AuthorsComponent],
             providers: [AuthorsService]
         }).compileComponents();

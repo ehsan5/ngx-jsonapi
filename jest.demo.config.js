@@ -5,7 +5,7 @@ module.exports = {
   roots: ['<rootDir>/demo'],
   modulePaths: ['<rootDir>/dist'],
   moduleNameMapper: {
-      'ngx-jsonapi': '<rootDir>/dist'
+      'hpen-jsonapi': '<rootDir>/dist'
   },
   coveragePathIgnorePatterns: [
       '/node_modules/',

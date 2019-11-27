@@ -19,7 +19,7 @@
     "baseUrl": ".",
     "rootDir": "../",
     "paths": {
-      "ngx-jsonapi": [ "../src" ]
+      "hpen-jsonapi": [ "../src" ]
     }
   },
   "include": [

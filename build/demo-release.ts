@@ -7,7 +7,7 @@ var dir = path.resolve(path.join(__dirname, '../', 'demo-dist'));
 
 // CNAME FILE
 cmd('mkdir ', [`-p ${dir}`]);
-fs.writeFile(`${dir}/CNAME`, 'ngx-jsonapi.reyesoft.com', function(err) {
+fs.writeFile(`${dir}/CNAME`, 'hpen-jsonapi.reyesoft.com', function(err) {
     if (err) {
         return console.log(err);
     }

@@ -17,13 +17,13 @@ module.exports = {
       'json'
   ],
   moduleNameMapper: {
-      '^ngx-jsonapi/(?!db)(.*)': '<rootDir>/src/$1'
+      '^hpen-jsonapi/(?!db)(.*)': '<rootDir>/src/$1'
   },
   transformIgnorePatterns: [
-      'node_modules/(?!ngx-jsonapi)'
+      'node_modules/(?!hpen-jsonapi)'
   ],
   modulePathIgnorePatterns: [
       'dist',
-      'node_modules/ngx-jsonapi'
+      'node_modules/hpen-jsonapi'
   ]
 };

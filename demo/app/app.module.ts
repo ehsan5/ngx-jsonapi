@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { NgxJsonapiModule } from 'ngx-jsonapi';
+import { HpenJsonapiModule } from 'hpen-jsonapi';
 
 import { AppComponent } from './app.component';
 import { AuthorsService } from './authors/authors.service';
@@ -34,7 +34,7 @@ const appRoutes: Routes = [
         HttpClientModule,
         SharedModule,
         RouterModule.forRoot(appRoutes, { useHash: true }),
-        NgxJsonapiModule.forRoot({
+        HpenJsonapiModule.forRoot({
             url: environment.jsonapi_url
         })
     ],

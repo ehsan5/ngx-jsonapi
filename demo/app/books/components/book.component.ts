@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Resource } from 'ngx-jsonapi';
+import { Resource } from 'hpen-jsonapi';
 import { AuthorsService } from '../../authors/authors.service';
 import { BooksService, Book } from './../books.service';
 import { PhotosService } from '../../photos/photos.service';

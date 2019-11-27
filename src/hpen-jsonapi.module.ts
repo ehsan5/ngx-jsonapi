@@ -23,21 +23,21 @@ import { JsonapiConfig } from './jsonapi-config';
         JsonapiHttp
     ]
 })
-export class NgxJsonapiModule {
+export class HpenJsonapiModule {
     public constructor(
         @Optional()
         @SkipSelf()
-        parentModule: NgxJsonapiModule,
+        parentModule: HpenJsonapiModule,
         jsonapiCore: JsonapiCore
     ) {
         if (parentModule) {
-            throw new Error('NgxJsonapiModule is already loaded. Import it in the AppModule only');
+            throw new Error('HpenJsonapiModule is already loaded. Import it in the AppModule only');
         }
     }
 
     public static forRoot(config: JsonapiConfig): ModuleWithProviders {
         return {
-            ngModule: NgxJsonapiModule,
+            ngModule: HpenJsonapiModule,
             providers: [{ provide: JsonapiConfig, useValue: config }]
         };
     }

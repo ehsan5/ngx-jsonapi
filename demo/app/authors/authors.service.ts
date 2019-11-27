@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Autoregister, Service, Resource, DocumentCollection } from 'ngx-jsonapi';
+import { Autoregister, Service, Resource, DocumentCollection } from 'hpen-jsonapi';
 import { Book } from '../books/books.service';
 import { Photo } from '../photos/photos.service';
 

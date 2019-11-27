@@ -1,11 +1,11 @@
 {
-    "name": "ngx-jsonapi-demo",
+    "name": "hpen-jsonapi-demo",
     "description": "Demo app for JSON API library for Angular",
     "scripts": {
         "build": "ts-node ./build/index.ts",
         "postbuild": "rimraf **/dist/**/*.ngsummary.json",
         "deploy:builds": "ts-node ./build/deploy-build.ts",
-        "lint": "ng lint ngx-jsonapi",
+        "lint": "ng lint hpen-jsonapi",
         "test": "yarn test:lib",
         "test:all": "yarn test:lib && yarn build && yarn test:demo",
         "test:lib": "jest --config ./jest.lib.config.js",
@@ -13,7 +13,7 @@
         "clean": "git clean -xdf && yarn && yarn run bootstrap",
         "cli": "ng",
         "coverage:html": "nyc report --reporter=html",
-        "copy:dist": "ncp dist/ ./node_modules/ngx-jsonapi/",
+        "copy:dist": "ncp dist/ ./node_modules/hpen-jsonapi/",
         "start": "yarn run demo:start",
         "demo:start": "yarn run cli serve",
         "demo:start:aot": "yarn run cli serve -prod",
@@ -70,7 +70,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/reyesoft/ngx-jsonapi"
+        "url": "https://github.com/reyesoft/hpen-jsonapi"
     },
     "nyc": {
         "statements": 25,

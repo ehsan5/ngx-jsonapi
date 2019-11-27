@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Resource, DocumentCollection } from 'ngx-jsonapi';
+import { Resource, DocumentCollection } from 'hpen-jsonapi';
 import { BooksService, Book } from './../books.service';
 import { AuthorsService } from './../../authors/authors.service';
 import { PhotosService } from '../../photos/photos.service';

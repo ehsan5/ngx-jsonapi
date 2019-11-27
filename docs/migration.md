@@ -1,10 +1,10 @@
-# ngx-jsonapi v1 to v2 update guide
+# hpen-jsonapi v1 to v2 update guide
 
-ngx-jsonapi v2 has arrived! While this is a major version change (from 1.x to 2.x), we've put in a lot of work to keep the hard breaking changes to a minimum.
+hpen-jsonapi v2 has arrived! While this is a major version change (from 1.x to 2.x), we've put in a lot of work to keep the hard breaking changes to a minimum.
 
 ## package.json
 
-Update version of `ngx-jsonapi` to `2.0.0-rc.1` (or [last version](https://www.npmjs.com/package/ngx-jsonapi))
+Update version of `hpen-jsonapi` to `2.0.0-rc.1` (or [last version](https://www.npmjs.com/package/hpen-jsonapi))
 
 ## Services
 
@@ -22,7 +22,7 @@ Update version of `ngx-jsonapi` to `2.0.0-rc.1` (or [last version](https://www.n
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { Service, ISchema, Resource } from 'ngx-jsonapi';
+import { Service, ISchema, Resource } from 'hpen-jsonapi';
 
 @Injectable()
 export class AuthorsService extends Service<Author> {
@@ -54,7 +54,7 @@ export class Author extends Resource {
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { Autoregister, Service, Resource, DocumentCollection, DocumentResource } from 'ngx-jsonapi';
+import { Autoregister, Service, Resource, DocumentCollection, DocumentResource } from 'hpen-jsonapi';
 import { Book } from '../books/books.service';
 import { Photo } from '../photos/photos.service';
 
@@ -145,5 +145,5 @@ public authors: DocumentCollection<Author>;
 
 ## More information?
 
--   [README](https://github.com/reyesoft/ngx-jsonapi/blob/initial-commit-v2/README.md)
--   [Issue](https://github.com/reyesoft/ngx-jsonapi/issues/105)
+-   [README](https://github.com/reyesoft/hpen-jsonapi/blob/initial-commit-v2/README.md)
+-   [Issue](https://github.com/reyesoft/hpen-jsonapi/issues/105)

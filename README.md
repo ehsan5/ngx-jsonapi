@@ -1,21 +1,21 @@
-# ngx-jsonapi
+# hpen-jsonapi
 
 <div align="center">
 
-[![angular jsonapi](https://user-images.githubusercontent.com/938894/34119450-fa59fec0-e400-11e7-92c1-dd2aff2ebc00.png)](https://github.com/reyesoft/ngx-jsonapi)
+[![angular jsonapi](https://user-images.githubusercontent.com/938894/34119450-fa59fec0-e400-11e7-92c1-dd2aff2ebc00.png)](https://github.com/reyesoft/hpen-jsonapi)
 
-[![CircleCI](https://circleci.com/gh/reyesoft/ngx-jsonapi.svg?style=svg)](https://circleci.com/gh/reyesoft/ngx-jsonapi) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b097196f7f544412a79a99080a41bbc1)](https://www.codacy.com/app/Swimlane/ngx-charts?utm_source=github.com&utm_medium=referral&utm_content=swimlane/ngx-charts&utm_campaign=Badge_Grade) [![npm version](https://badge.fury.io/js/ngx-jsonapi.png)](https://badge.fury.io/js/ngx-jsonapi) [![Coverage Status](https://coveralls.io/repos/github/reyesoft/ngx-jsonapi/badge.svg?branch=master)](https://coveralls.io/github/reyesoft/ngx-jsonapi?branch=master)
+[![CircleCI](https://circleci.com/gh/reyesoft/hpen-jsonapi.svg?style=svg)](https://circleci.com/gh/reyesoft/hpen-jsonapi) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b097196f7f544412a79a99080a41bbc1)](https://www.codacy.com/app/Swimlane/ngx-charts?utm_source=github.com&utm_medium=referral&utm_content=swimlane/ngx-charts&utm_campaign=Badge_Grade) [![npm version](https://badge.fury.io/js/hpen-jsonapi.png)](https://badge.fury.io/js/hpen-jsonapi) [![Coverage Status](https://coveralls.io/repos/github/reyesoft/hpen-jsonapi/badge.svg?branch=master)](https://coveralls.io/github/reyesoft/hpen-jsonapi?branch=master)
 
 </div>
 This is a JSON API library for Angular 6+. Please use [ts-angular-jsonapi](https://github.com/reyesoft/ts-angular-jsonapi) for AngularJS.
 
 ## Online demo
 
-You can test library on this online example 👌 <http://ngx-jsonapi.reyesoft.com/>.
+You can test library on this online example 👌 <http://hpen-jsonapi.reyesoft.com/>.
 
 <div align="center">
 
-[![demo app](https://user-images.githubusercontent.com/938894/39630783-c6f55ed4-4f86-11e8-9376-9acb587fe4c4.gif)](http://ngx-jsonapi.reyesoft.com/)
+[![demo app](https://user-images.githubusercontent.com/938894/39630783-c6f55ed4-4f86-11e8-9376-9acb587fe4c4.gif)](http://hpen-jsonapi.reyesoft.com/)
 
 </div>
 
@@ -33,7 +33,7 @@ Data is obtained from [Json Api Playground](https://jsonapiplayground.reyesoft.c
 
 ## Migration
 
--   [Migration v1 to v2 update guide](https://github.com/reyesoft/ngx-jsonapi/blob/v2.0/docs/migration.md)
+-   [Migration v1 to v2 update guide](https://github.com/reyesoft/hpen-jsonapi/blob/v2.0/docs/migration.md)
 
 ## Usage
 
@@ -44,7 +44,7 @@ First of all, it's advisable to read [Jsonapi specification](http://jsonapi.org/
 ### Installation
 
 ```bash
-yarn add ngx-jsonapi@2.0.0-rc.4 --save
+yarn add hpen-jsonapi@2.0.0-rc.4 --save
 # or npm if you wish...
 ```
 
@@ -56,11 +56,11 @@ yarn add ngx-jsonapi@2.0.0-rc.4 --save
 
 ```typescript
 import { NgModule } from '@angular/core';
-import { NgxJsonapiModule } from 'ngx-jsonapi';
+import { HpenJsonapiModule } from 'hpen-jsonapi';
 
 @NgModule({
     imports: [
-        NgxJsonapiModule.forRoot({
+        HpenJsonapiModule.forRoot({
             url: '//jsonapiplayground.reyesoft.com/v2/'
         })
     ]
@@ -78,7 +78,7 @@ Like you know, the better way is with examples. Lets go! 🚀
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { Autoregister, Service, Resource, DocumentCollection, DocumentResource } from 'ngx-jsonapi';
+import { Autoregister, Service, Resource, DocumentCollection, DocumentResource } from 'hpen-jsonapi';
 import { Book } from '../books/books.service';
 import { Photo } from '../photos/photos.service';
 
@@ -108,7 +108,7 @@ export class AuthorsService extends Service<Author> {
 
 ```typescript
 import { Component } from '@angular/core';
-import { DocumentCollection } from 'ngx-jsonapi';
+import { DocumentCollection } from 'hpen-jsonapi';
 import { AuthorsService, Author } from './../authors.service';
 
 @Component({
@@ -242,11 +242,11 @@ authorsService.all({
 
 ## Local Demo App
 
-You can run [JsonApi Demo App](http://ngx-jsonapi.reyesoft.com/) locally following the next steps:
+You can run [JsonApi Demo App](http://hpen-jsonapi.reyesoft.com/) locally following the next steps:
 
 ```bash
-git clone git@github.com:reyesoft/ngx-jsonapi.git
-cd ngx-jsonapi
+git clone git@github.com:reyesoft/hpen-jsonapi.git
+cd hpen-jsonapi
 yarn
 yarn start
 ```

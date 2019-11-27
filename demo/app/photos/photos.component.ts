@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Service, DocumentResource } from 'ngx-jsonapi';
+import { Service, DocumentResource } from 'hpen-jsonapi';
 import { Photo } from './photos.service';
 
 @Component({
