@@ -11,8 +11,8 @@ export class PathBuilder {
         this.appendPath(service.getPrePath());
         if (params.beforepath) {
             this.appendPath(params.beforepath);
-        }
-        this.appendPath(service.getPath());
+        } else//by ehsan amj
+            this.appendPath(service.getPath());
         if (params.include) {
             this.setInclude(params.include);
         }

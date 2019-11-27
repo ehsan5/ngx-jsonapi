@@ -78,6 +78,12 @@ export class Resource implements ICacheable {
                         included.push(resource.toObject({}).data);
                     }
                 }
+
+                //by ehsan Amj if has meta
+                if(Object.keys(relationship.meta).length >0)
+                {
+                    relationships[relation_alias]['meta'] = relationship.meta;
+                }
             } else {
                 // @TODO PABLO: agregué el check de null porque sino fallan las demás condiciones, además es para eliminar la relacxión del back
                 if (relationship.data === null || relationship.data === undefined) {

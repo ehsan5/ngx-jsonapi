@@ -73,6 +73,7 @@ export class Service<R extends Resource = Resource> {
 
         let path = new PathBuilder();
         path.applyParams(this, params);
+        if(id) //by Ehsan Amj
         path.appendPath(id);
 
         let resource: R = this.getOrCreateResource(id);
